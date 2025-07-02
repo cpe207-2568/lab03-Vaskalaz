@@ -3,7 +3,133 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Baumans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
     <title>My Portfolio</title>
   </head>
-  <body></body>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark" >
+      <div class="container-fluid">
+        <a class="navbar-brand" style="font-size: 35px;" href="index.html">Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-5" style="font-size: 25px;">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="exp.html">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="ctm.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="d-flex flex-column flex-sm-row justify-content-center align-items-center p-3 gap-4"
+      style="max-width: 50rem; margin: auto"
+    >
+      <div>
+        <img src="/img/pro.webp" class="rounded-circle" style="width: 200px" />
+      </div>
+      <div class="d-none d-sm-block">
+        <div class="display-5 mb-3">Thanaphat Wongchan</div>
+        <div class="text-muted">
+          Hi, my name is Thanaphat. I graduated from Chiang Mai University with
+          a degree in Computer Engineering. In my free time, I enjoy watching
+          football matches, playing games, and listening to music.
+        </div>
+      </div>
+    </div>
+    <div class="display-5 d-sm-none mb-3" style="text-align: center">
+      Thanaphat Wongchan
+    </div>
+    <div style="text-align: center; font-size: 35px; margin-bottom: 5px">
+      Skills
+    </div>
+    <div class="mx-auto px-4" style="max-width: 45rem">
+      <div class="d-flex border secondary mb-3 rounded-4">
+        <img
+          src="/img/programming.avif"
+          width="200px"
+          height="150px"
+          style="object-fit: cover"
+          class="rounded-start-4 d-none d-sm-block"
+        />
+        <div class="p-3">
+          <p style="font-size: 30px">Programming</p>
+          <span class="text-muted">
+            I’ve gained hands-on experience with C++, HTML, and CSS through
+            small projects and practice exercises.
+          </span>
+        </div>
+      </div>
+      <div class="d-flex border secondary mb-3 rounded-4">
+        <div class="p-3">
+          <p style="font-size: 30px">Web App</p>
+          <span class="text-muted">
+            I developed a basic web application using Glide to explore no-code
+            development tools.
+          </span>
+        </div>
+        <img
+          src="/img/App.jpg"
+          width="200px"
+          height="150px"
+          style="object-fit: cover"
+          class="rounded-end-4 d-none d-sm-block"
+        />
+      </div>
+      <div class="d-flex border secondary mb-3 rounded-4">
+        <img
+          src="/img/robot.jpg"
+          width="200px"
+          height="150px"
+          style="object-fit: cover"
+          class="rounded-start-4 d-none d-sm-block"
+        />
+        <div class="p-3">
+          <p style="font-size: 30px">Robot</p>
+          <span class="text-muted">
+            I can make a robot with micro:bit that can move, follow a line, and
+            avoid obstacles.
+          </span>
+        </div>
+      </div>
+    </div>
+    <p class="text-muted mb-3 text-center">
+      © 2025 thanaphat-wongchan.com by Thanaphat Wongchan
+    </p>
+  </body>
 </html>
